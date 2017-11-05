@@ -1,2 +1,4 @@
 # StockA
-Stock A infomation auto download
+Stock A infomation auto download.
+
+!TEST GIT FUNCTION.
