@@ -1,0 +1,18 @@
+[2017-11-05 22:20:41] Automatic stock data update program start!
+[2017-11-05 22:21:44] Automatic stock data update program start!
+[2017-11-05 22:21:44] tushare version: 1.0.2
+[2017-11-05 22:22:30] Automatic stock data update program start!
+[2017-11-05 22:22:30] tushare version: 1.0.2
+[2017-11-05 22:23:40] Automatic stock data update program start!
+[2017-11-05 22:23:40] tushare version: 1.0.2
+[2017-11-05 22:25:45] Automatic stock data update program start!
+[2017-11-05 22:25:45] tushare version: 1.0.2
+[2017-11-05 22:25:46] Get Stock Basics OK.
+[2017-11-05 22:28:13] Automatic stock data update program start!
+[2017-11-05 22:28:13] tushare version: 1.0.2
+[2017-11-05 22:28:13] Get Stock Basics OK.
+[2017-11-05 22:28:13] SAVE all stock basics csv FAILED.
+[2017-11-05 22:30:19] Automatic stock data update program start!
+[2017-11-05 22:30:19] tushare version: 1.0.2
+[2017-11-05 22:30:19] Get Stock Basics OK.
+[2017-11-05 22:30:19] SAVE all stock basics csv OK. File saved to D:\Workspace\QuantOne\StockDataA\AllStockBasciInfo.csv

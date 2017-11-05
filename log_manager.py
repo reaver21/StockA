@@ -11,18 +11,18 @@ import time
 '''
 Set default log_file_path
 '''
-default_log_file_path = os.path.dirname(os.path.realpath(__file__)) + r"\log.txt"
-LOG_DEFAULT_STARTUP = r'Automatic stock data update program start!'
+_DEFAULT_LOG_FILE_PATH = os.path.dirname(os.path.realpath(__file__)) + r"\log.txt"
+_LOG_DEFAULT_STARTUP = r'Automatic stock data update program start!'
 LOG = ''
 
 
-def write_log_with_timestamp(default_log_content=''):
+def write_log_with_timestamp(log_content=''):
     try:
         # open file
-        log_file = os.open(default_log_file_path, os.O_CREAT | os.O_APPEND | os.O_RDWR)
+        log_file = os.open(_DEFAULT_LOG_FILE_PATH, os.O_CREAT | os.O_APPEND | os.O_RDWR)
         # format log content
         timestamp = '[' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '] '
-        LOG = default_log_content + '\n'
+        LOG = log_content + '\n'
         # write log
         os.write(log_file, bytes(timestamp, 'GBK'))
         os.write(log_file, bytes(LOG, 'GBK'))
@@ -32,12 +32,12 @@ def write_log_with_timestamp(default_log_content=''):
     print(LOG)
 
 
-def write_log_only(default_log_content=''):
+def write_log_only(log_content=''):
     try:
         # open file
-        log_file = os.open(default_log_file_path, os.O_CREAT | os.O_APPEND | os.O_RDWR)
+        log_file = os.open(_DEFAULT_LOG_FILE_PATH, os.O_CREAT | os.O_APPEND | os.O_RDWR)
         # format log content
-        LOG = default_log_content + '\n'
+        LOG = log_content + '\n'
         # write log
         os.write(log_file, bytes(LOG, 'GBK'))
         os.close(log_file)
