@@ -14,6 +14,7 @@ def main():
     ts_func.ts_get_version()
     #ts_func.ts_get_stock_basics_df()
     ts_func.save_all_stock_basics_to_csv()
+    ts_func.save_every_stock_data_to_csv()
     #tu_io.save_all_stock_basic_data_a_to_csv()
     #tu_io.save_every_stock_data_per_day_to_csv()
 

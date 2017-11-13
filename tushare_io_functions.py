@@ -14,7 +14,7 @@ import os
 stock_data_dir = "D:\Workspace\QuantOne\StockDataA"
 stock_data_per_day_dir = "D:\Workspace\QuantOne\StockDataA\Days"
 csv_filepath_stock_data_a = stock_data_dir + r"\AllStockBasciInfo.csv"
-file_encoding = 'gbk'
+file_encoding = 'utf-8'
 LOG = ''
 
 '''
