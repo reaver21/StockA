@@ -10,6 +10,9 @@ import log_manager as lm
 
 
 def main():
+    '''
+    Auto get stock data.
+    '''
     lm.write_log_with_timestamp(lm._LOG_DEFAULT_STARTUP)
     ts_func.ts_get_version()
     #ts_func.ts_get_stock_basics_df()
