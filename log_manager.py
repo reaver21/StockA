@@ -24,8 +24,8 @@ def write_log_with_timestamp(log_content=''):
         timestamp = '[' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '] '
         LOG = log_content + '\n'
         # write log
-        os.write(log_file, bytes(timestamp, 'GBK'))
-        os.write(log_file, bytes(LOG, 'GBK'))
+        os.write(log_file, bytes(timestamp, 'utf-8'))
+        os.write(log_file, bytes(LOG, 'utf-8'))
         os.close(log_file)
     except IOError:
         LOG = '[IO Error] log.txt process failed.'
@@ -39,7 +39,7 @@ def write_log_only(log_content=''):
         # format log content
         LOG = log_content + '\n'
         # write log
-        os.write(log_file, bytes(LOG, 'GBK'))
+        os.write(log_file, bytes(LOG, 'utf-8'))
         os.close(log_file)
     except IOError:
         LOG = '[IO Error] log.txt process failed.'
